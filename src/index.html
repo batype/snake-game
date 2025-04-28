@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>经典贪吃蛇游戏</title>
+</head>
+<body>
+  <div class="game-container">
+    <div class="game-header">
+      <h1>贪吃蛇</h1>
+      <div class="score-container">
+        <div class="current-score">分数: <span id="score">0</span></div>
+        <div class="high-score">最高分: <span id="highScore">0</span></div>
+      </div>
+    </div>
+    <canvas id="gameCanvas" width="600" height="600"></canvas>
+    <div class="game-controls">
+      <div class="control-group">
+        <button id="startBtn">开始游戏</button>
+        <button id="pauseBtn">暂停</button>
+        <button id="restartBtn">重新开始</button>
+      </div>
+      <div class="difficulty-controls">
+        <span>难度: </span>
+        <button id="easyBtn" class="difficulty-btn active">简单</button>
+        <button id="mediumBtn" class="difficulty-btn">中等</button>
+        <button id="hardBtn" class="difficulty-btn">困难</button>
+      </div>
+      <div class="theme-controls">
+        <span>主题: </span>
+        <button id="classicTheme" class="theme-btn active">经典</button>
+        <button id="modernTheme" class="theme-btn">现代</button>
+        <button id="retroTheme" class="theme-btn">复古</button>
+      </div>
+    </div>
+    <div class="game-instructions">
+      <h3>游戏说明</h3>
+      <p>使用方向键控制蛇的移动方向</p>
+      <p>按空格键暂停/继续游戏</p>
+      <p>吃到食物可以增加长度和分数</p>
+      <p>撞到墙壁或自己的身体会导致游戏结束</p>
+    </div>
+    <div id="gameMessage" class="game-message"></div>
+  </div>
+</body>
+</html>
